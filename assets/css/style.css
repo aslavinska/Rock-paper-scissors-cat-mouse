@@ -1,0 +1,101 @@
+/* --------- Global style */
+
+body {
+    background-color: rgb(185, 217, 230);
+    font-family: "Raleway", sans-serif;
+    color: #273746;
+    text-align: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+/* --------- Heading */
+
+.heading {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.logo {
+    height: 40px;
+    padding-right: 5px;
+}
+
+/* --------- Game layout */
+
+.cat {
+    height: 100px;
+    width: 160px;
+    position: fixed;
+    top: 40vh;
+    left: 30vw;
+    z-index: 100;
+}
+.pipe_sprite {
+    position: fixed;
+    top: 50vh;
+    left: 150vw;
+    height: 85vh;
+    width: 7vw;
+    background-color: rgb(112, 170, 112);
+}
+
+.game-area {
+    background-color: #E6ECF0;
+    box-sizing: border-box;
+    width: 85%;
+    height: 65vh;
+    max-height: 450px;
+    max-width: 830px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1%;
+}
+
+.score-area {
+    margin: 5px auto;
+    width: 60%;
+    font-size: 1.2rem;
+}
+
+.controls-area {
+    width: 85%;
+    margin: 30px auto;
+}
+
+#score {
+    color: green;
+    font-weight: bold;
+}
+
+
+.scores {
+    display: inline-block;
+    padding: 25px;
+}
+
+/* --------- Media queries */
+
+@media (max-width: 414px) {
+
+    .score-area {
+        width: 100%;
+    }
+
+    .scores {
+        margin: 0.5em auto;
+        display: block;
+        padding: 5px;
+    }
+
+    .heading {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .game-area {
+        height: 70vh;
+    }
+
+}
