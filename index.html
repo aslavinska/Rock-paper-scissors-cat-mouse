@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="assets/css/style.css">
     </head>
     <body>
+        <!-- Title Block-->
         <section class = "title-block">
             <ul>
                 <li>Rock</li>
@@ -16,7 +17,41 @@
                 <li>Cat</li>
                 <li>Mouse</li>
             </ul>
+            <div class="score">
+                <div class="score-title">Score</div>
+                <div class="score-count">0</div>
+            </div>
         </section>
+
+        <!--User Choice-->
+        <secction class="user-choice">
+            <div class="game-card-scissors"><img src=""></div>
+            <div class="game-card-paper"><img src=""></div>
+            <div class="game-card-rock"><img src=""></div>
+            <div class="game-card-cat"><img src=""></div>
+            <div class="game-card-mouse"><img src=""></div>
+        </secction>
+        <div class="section-picked" hidden>
+            <div class="choice-block"><p>You picked:</p></div>
+            <div class="user-pick"></div>
+            <div class="result" hidden>
+                <div class="title">You have lost</div>
+                <button> Play Againg</button>
+            </div>
+            <div class="computer-choice">
+                <p>Computer picked:</p>
+                <div class="computer-pick"></div>
+            </div>
+        </div>
+
+        <button class="rules-btn">Rules</button>
+        <div class="model-background"></div>
+        <div class="model"></div>
+        <span class="close">
+            <img src="" alt="close">
+        </span>
+        <title>Rules</title>
+        <div class="content"><img src="" alt="Image with Rules for the game"></div>
         <script src="/assets/js/script.js"></script>
     </body>
 </html>
