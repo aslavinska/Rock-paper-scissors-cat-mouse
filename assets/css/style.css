@@ -25,8 +25,8 @@ body{
 }
 
 
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(192, 50%, 74%); }
+.attributes { font-size: 11px; text-align: center; }
+.attributes a { color: hsl(192, 50%, 74%); }
 
 img {
     max-width: 100%;
@@ -130,17 +130,7 @@ button {
 
 /*Model Section*/
 
-.model{
-    display: none;
-    position: absolute;
-    z-index: 3;
-    background: white;
-    width: 100%;
-    max-width: 500px;
-    padding: 40px 30px 40px;
-    border-radius: 5px;
-    top: 40px;
-}
+
 .model.active, .model-background.active{
     display:block;
 }
@@ -153,6 +143,32 @@ button {
     bottom: 0;
     z-index: 2;
     background: rgb(0,0,0,20%);
+}
+.model{
+    display: none;
+    position: absolute;
+    z-index: 3;
+    background: white;
+    width: 100%;
+    max-width: 500px;
+    padding: 40px 30px 40px;
+    border-radius: 5px;
+    top: 40px;
+}
+.model .close{
+    position: absolute;
+    right: 40px;
+    cursor: pointer;
+}
+
+.model .title{
+    color: hsl(278, 25%, 30%);
+    font-weight: 600;
+    font-size: 35;
+}
+
+.model.content {
+    text-align: center;
 }
 .rules-button {
     border: 1px solid rgb(189, 148, 165);
