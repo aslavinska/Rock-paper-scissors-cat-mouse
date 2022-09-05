@@ -18,6 +18,10 @@ let message = document.querySelector('.message');
 // Setting initial game state to start
 let gameState = 'Start';
 
+let fanceSeperation = 0;
+    
+const fenceGap = 35;
+
 // Add an eventlistener
 document.addEventListener('keydown', (e) => {
     
@@ -43,15 +47,36 @@ function move(){
     // Check if the game is over
     if (gameState != 'Play') return;
 
-    // Check all pipe elements
-     let pipeSprite = document.querySelectorAll('.fence_sprite');
-     pipeSprite.forEach((element)=>{
+    // Check all fence elements
+     let fenceSprite = document.querySelectorAll('.fence_sprite');
+     fenceSprite.forEach((element)=>{
 
      })
 }
 
 function gravityFall(){
     if (gameState != 'Play') return;
+    let catFly = 0;
+    catFly = catFly + gravity;
+    document.addEventListener('keydown', (e) => {
+      if (e.key == 'ArrowUp' || e.key == ' ') {
+        catFly = -7;
+      }
+    });
+  
+    // Detect collision between the cat and the fence 
+  
+    if (catProps.top <= 0 ||
+      catProps.bottom >= background.bottom) {
+      gameState = 'End';
+      message.innerHTML = 'Press Enter To Restart';
+      message.style.left = '28vw';
+      return;
+    }
+    cat.style.top = catProps.top + catFly + 'px';
+    catProps = cat.getBoundingClientRect();
+    requestAnimationFrame(gravityFall);
+    requestAnimationFrame(gravityFall);
 }
 
 function callFence(){
@@ -77,7 +102,7 @@ function callFence(){
       fenceSprite.style.left = '100vw';
       fenceSprite.increase_score = '1';
         
-      // Append the created pipe element in DOM
+      // Append the created fence element in DOM
       document.body.appendChild(fenceSprite);
     }
     fenceSeperation++;
