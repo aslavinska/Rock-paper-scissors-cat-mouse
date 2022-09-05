@@ -1,9 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap');
+
 * {
     box-sizing: border-box;
 }
-
+html{
+    height: 100%;
+}
+body{
+    min-height: 100%;
+    margin: 0;
+    padding: 45px 5px 5px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #fff;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+    background: radial-gradient(circle at top, hsl(299, 33%, 52%), hsl(298, 14%, 35%));
+}
 img {
     max-width: 100%;
+}
+
+button:focus, button:active {
+    outline: 0;
+}
+
+button {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    text-transform: uppercase;
 }
 
 .flex-row {
@@ -18,4 +44,52 @@ img {
 
 .hidden{
     display:none;
+}
+
+.result .title {
+    margin-bottom: 10px;
+}
+
+.result button{
+    border: 1px solid;
+    color: black;
+    padding: 10px 40px;
+    border-radius: 5px;
+    cursor: pointer;
+    background:linear-gradient( to right, #fff 50%, transparent 50%);
+    background-size: 250% 100%;
+    background-position: right bottom;
+    transition: background-position .3s ease-out, color 3s ease-out;
+}
+
+.result-button:hover{
+    background-position: left bottom;
+    color: rgb(228, 214, 220);
+}
+
+/*Model Section*/
+.model-background{
+    display: none;
+}
+
+.model{
+    display: none;
+}
+
+.rules-button {
+    border: 1px solid rgb(189, 148, 165);
+    padding: 10px 35px;
+    border-radius: 5px;
+    position: absolute;
+    right: 25px;
+    bottom: 25px;
+    cursor: pointer;
+    background: linear-gradient( to left, #fff 50%, transparent 50%);
+    background-size: 250% 100%;
+    background-position: right bottom;
+    transition: background-position .3s ease-out, color 3s ease-out;
+}
+.rules-button:hover{
+    background-position: left bottom;
+    color: rgb(228, 214, 220);
 }
