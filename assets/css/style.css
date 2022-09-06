@@ -66,8 +66,6 @@ button {
 }
 /*Title block*/
 
- /* Title block */
-
  .title-block {
     justify-content: space-between;
     width: 100%;
@@ -142,7 +140,7 @@ button {
     background-size: 340px;
     width: 100%;
     max-width: 700px;
-    position: absolute;
+    position: relative;
     height: 467px;
 }
 
@@ -152,13 +150,13 @@ button {
     justify-content: center;
     width: 145px;
     height: 150px;
-    border-radius: 50%;
+    border-radius: 50%; 
     cursor: pointer;
     position: absolute;    
 }
 
 .game-card img {
-    position: absolute;
+    position: relative;  
     z-index: 2;
 }
 
