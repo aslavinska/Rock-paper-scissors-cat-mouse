@@ -29,8 +29,10 @@ body{
 .attributes a { color: hsl(192, 50%, 74%); }
 
 img {
-    max-width: 100%;
+    width: 90px;
+    height: 90px;
 }
+
 
 button:focus, button:active {
     outline: 0;
