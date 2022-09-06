@@ -2,9 +2,12 @@
 window.addEventListener('load', ()=>{
     // event listener for each icon item 
     let userChoice ='';
-    document.querySelectorAll('user-choice .game-card').forEach(card=>{
-        card.addEventListener('click',(event)=>{
-            userChoice = getUserChoice(event.target);
+    let computerChoice ='';
+    document.querySelectorAll('.user-choice .game-card').forEach(card=>{
+        card.addEventListener('click',(evt)=>{
+            userChoice = getUserChoice(evt.target);
+            computerChoice = getComputerChoice();
+            
             startGame();
         })
     })
@@ -15,8 +18,8 @@ function startGame(){
 
 }
 
-function getUserChoice(targer){
-    console.log(targer);
+function getUserChoice(target){
+    console.log(target);
     if (target.nodeName === 'IMG'){
         return target.parentElement.classList[1];
     }
