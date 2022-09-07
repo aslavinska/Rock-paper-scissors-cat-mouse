@@ -2,6 +2,7 @@ let userChoice = '';
 let computerChoice = '';
 let target = '';
 let currentScore = null;
+let currentCompScore = null;
 const userChoiceElement = document.querySelector('.user-choice');
 const pickedElement = document.querySelector('.picked');
 const userPickElement = document.querySelector('.user-pick');
@@ -9,6 +10,7 @@ const computerPickElement = document.querySelector('.computer-pick');
 const resultElement = document.querySelector('.result');
 const resultTitleElement = resultElement.querySelector('.title');
 const scoreCountElement = document.querySelector('.score-count');
+const scoreCompCountElement = document.querySelector('.comp-score-count');
 const rulesButton = document.querySelector('.rules-button');
 const modelBackground = document.querySelector('.model-background');
 const model = document.querySelector('.model');
@@ -45,7 +47,7 @@ function getWinner(user, computer) {
     } else {
         resultTitleElement.innerText = 'You Lost';
         console.log('You Lost');
-        // calculateScore(-1);
+        calculateCompScore(1);
     }
 }
 
@@ -53,11 +55,17 @@ function calculateScore(result) {
     currentScore += result;
     updateScoreBoard();
 }
+function calculateCompScore(result) {
+    currentCompScore += result;
+    updateCompScoreBoard();
+}
 
 function updateScoreBoard() {
     scoreCountElement.innerText = currentScore;
 }
-
+function updateCompScoreBoard() {
+    scoreCompCountElement.innerText = currentCompScore;
+}
 function getUserWinScore(result) {
     return userWinResults.some(winStr => winStr === result);
 }

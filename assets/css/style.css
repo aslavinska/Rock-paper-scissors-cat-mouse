@@ -93,7 +93,7 @@ button {
    padding: 14px 0 0;
 }
 
-.score-title {
+.score-title, .comp-score-title{
     color: hsl(268, 64%, 46%);
     font-size: 20px;
     font-weight: 700;
@@ -101,7 +101,7 @@ button {
     letter-spacing: 1px;
 }
 
-.score-count {
+.score-count, .comp-score-count {
    color: hsl(276, 25%, 31%);
    font-size: 63px;
    line-height: .9;
@@ -117,7 +117,7 @@ button {
    padding: 14px 0 0;
 }
 
-.score-title {
+.score-title, .comp-score-title {
     color: hsl(288, 40%, 41%);
     font-size: 20px;
     font-weight: 700;
@@ -125,7 +125,7 @@ button {
     letter-spacing: 1px;
 }
 
-.score-count {
+.score-count, .comp-score-count {
    color: hsl(300, 44%, 37%);
    font-size: 63px;
    line-height: .9;
@@ -385,11 +385,11 @@ button {
         padding: 10px 0 0;
     }
 
-    .score-title {
+    .score-title, .comp-score-title {
         font-size: 11px;
     }
 
-    .score-count {
+    .score-count, .comp-score-count {
         font-size: 39px;
     }
 
