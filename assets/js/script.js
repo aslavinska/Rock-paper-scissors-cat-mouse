@@ -1,6 +1,7 @@
 function gameMain(){
     let userChoice ='';
     let computerChoice ='';
+    console.log("Game Start");
     const cards = ['rock', 'paper', 'scissors', 'cat', 'mouse'];
     // check if the app is fully loaded and identify user actions
     window.addEventListener('load', () => {
