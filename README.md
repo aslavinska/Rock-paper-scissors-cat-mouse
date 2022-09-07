@@ -5,35 +5,13 @@
 # Features
 
 - **Navigation**
-    - Featuring at the top of the page, the navigation shows the page name in the top right corner: Cat Jonesy that links to the top of the page.
-    - The other navigation links are to the right: Home, About, Gallery and Contact Us which link to different sections of the same page. 
-    - The navigation is in a font visible and readable for a user and color that contrasts with the background. 
-    - The navigation clearly tells to the user the name of the app and website, and makes the different sections of information easy to find. 
+    - This games UI is designed to be on a single page and the view will be updated as per the user input.
     ![Menu Bar](/assets/images/menuprint.jpg)
-
-- **The Header**
-    - The header shows the name of the app, using the other color chosen: Shade of Orange with hand writing type of font theme. 
-    - The header shows an important message that needs to be shared with the worls "Adopt do not shop"
-    - Thi section provides the user with clear information about what the site is and who is the targetted audience. 
-
-- **The About Section**
-    - The about section gives details about the cat Jonesy history and has a table with charity names that Jonesy supports from his income online.
-    ![AboutScr](/assets/images/about-page-scr.jpg)
-
-- **The Contact Us section**
-    - The contact us section has a form to contact Jonesy and request his interview/ licencing of his videos or an advertisiment. 
-    - The contact us sectio includes social media links as the rest of te pages, so users can find Jonesy's tiktok and instagram pages.
-    ![ContactUsScr](/assets/images/contactus-scr.jpg)
-
-
-- **The Gallery**
-    - The gallery section includes some of the unique pictures of Jonesy that cannot be found anywhere else online. 
 
 # Testing
  - I have tested this page in brosers: Chrome and Firefox.
  - I confimed that this project is responsive, looks good and functions on all standard screen sizes using the devtools device toolbar.
- - I confirmed that the navigation, header, about, contact us and gallery are all readale and easy to understand. 
- - I have confirmed that the form works: requires entries in every field, will only accept an email in the email field and the submit button works. 
+ - I confirmed that the page is  readale and the game is easy to understand. 
 
  ## Bugs 
 
@@ -41,6 +19,7 @@
 
 1. During the development of the home page all elements were shift to the left of the page. Applying a main container to all elemnts and giving it item alligment to center resolved the issue. 
 2. 404 favicon error has been detected during the development, using favicon generator images and links were imported and the issue has been resolved. 
+3. The click command was not recognised by the browser.
 
 
 ## Validator Testing 

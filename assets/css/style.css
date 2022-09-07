@@ -17,7 +17,7 @@ body{
     align-items: center;
     min-height: 100vh;
     position: relative;
-    background: radial-gradient(circle at top, hsl(299, 33%, 52%), hsl(298, 14%, 35%));
+    background: radial-gradient(circle at top, hsl(299, 33%, 52%), hsl(297, 17%, 24%));
 }
 
 .main-container {
@@ -118,7 +118,7 @@ button {
 }
 
 .score-title {
-    color: hsl(229, 30%, 79%);
+    color: hsl(288, 40%, 41%);
     font-size: 20px;
     font-weight: 700;
     margin: 0 0 2px;
@@ -126,7 +126,7 @@ button {
 }
 
 .score-count {
-   color: hsl(228, 55%, 77%);
+   color: hsl(300, 44%, 37%);
    font-size: 63px;
    line-height: .9;
    font-weight: 700;
@@ -151,6 +151,7 @@ button {
     width: 145px;
     height: 150px;
     border-radius: 50%; 
+    position: relative;
     cursor: pointer;
     position: absolute;    
 }
@@ -172,7 +173,7 @@ button {
 }
 
 .game-card:hover:before {
-   background: rgba(255, 255, 255, 0);
+   background: rgba(73, 35, 65, 0);
    box-shadow: none;
 }
 
@@ -201,98 +202,11 @@ button {
    left: 115px;
 }
 
-/* Result block*/
-.result {
-    white-space: nowrap;
-    font-size: 30px;
-}
-
-.result .title {
-    margin: 53px 0 17px;
-    font-size: 58px;
-    line-height: 1;
-}
-.result button{
-    border: 1px solid;
-    color: black;
-    padding: 10px 40px;
-    border-radius: 5px;
-    cursor: pointer;
-    background:linear-gradient( to right, #fff 50%, transparent 50%);
-    background-size: 250% 100%;
-    background-position: right bottom;
-    transition: background-position .3s ease-out, color 3s ease-out;
-}
-
-.result-button:hover{
-    background-position: left bottom;
-    color: rgb(228, 214, 220);
-}
-
-/*Model Section*/
-
-
-.model.active, .model-background.active{
-    display:block;
-}
-.model-background{
-    display: none;
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    z-index: 2;
-    background: rgb(0,0,0,20%);
-}
-.model{
-    display: none;
-    position: absolute;
-    z-index: 3;
-    background: white;
-    width: 100%;
-    max-width: 500px;
-    padding: 40px 30px 40px;
-    border-radius: 5px;
-    top: 40px;
-}
-.model .close{
-    position: absolute;
-    right: 40px;
-    cursor: pointer;
-}
-
-.model .title{
-    color: hsl(278, 25%, 30%);
-    font-weight: 600;
-    font-size: 35;
-}
-
-.model.content {
-    text-align: center;
-}
-.rules-button {
-    border: 1px solid rgb(189, 148, 165);
-    padding: 10px 35px;
-    border-radius: 5px;
-    position: absolute;
-    right: 30px;
-    bottom: 102px;
-    cursor: pointer;
-    background: linear-gradient( to left, #fff 50%, transparent 50%);
-    background-size: 250% 100%;
-    background-position: right bottom;
-    transition: background-position .3s ease-out, color .3s ease-out;
-}
-.rules-button:hover{
-    background-position: left bottom;
-    color: rgb(228, 214, 220);
-}
-
 /* Picked section */
 
 .picked {
     align-items: center;
+    justify-content: space-between;
     width: 100%;
     text-align: center;
     padding: 30px 10px;
@@ -323,4 +237,101 @@ button {
     width: 50%;
     height: 100%;
     align-items: center;
+}
+
+/* Result block*/
+.result {
+    white-space: nowrap;
+    font-size: 30px;
+}
+
+.result .title {
+    margin: 53px 0 17px;
+    font-size: 58px;
+    line-height: 1;
+}
+.result button{
+    border: 1px solid hsl(315, 16%, 45%);
+    padding: 14px 63px;
+    border-radius: 10px;
+    cursor: pointer;
+    background:linear-gradient( to right, #fff 50%, transparent 50%);
+    background-size: 250% 100%;
+    background-position: right bottom;
+    transition: background-position .3s ease-out, color 3s ease-out;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.result-button:hover{
+    background-position: left bottom;
+    color: rgb(228, 214, 220);
+}
+
+/*Model Section*/
+
+.model.active, .model-background.active{
+    display:block;
+}
+.rules-button {
+    border: 1px solid rgb(189, 148, 165);
+    padding: 10px 35px;
+    border-radius: 5px;
+    position: absolute;
+    right: 30px;
+    bottom: 102px;
+    cursor: pointer;
+    background: linear-gradient( to left, #fff 50%, transparent 50%);
+    background-size: 250% 100%;
+    background-position: right bottom;
+    transition: background-position .3s ease-out, color .3s ease-out;
+    text-transform: uppercase;
+}
+.rules-button:hover{
+    background-position: left bottom;
+    color: rgb(199, 190, 198);
+}
+.model-background{
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 2;
+    background: rgba(51, 51, 51, 0.2);
+}
+.model{
+    display: none;
+    position: absolute;
+    z-index: 3;
+    background: white;
+    width: 100%;
+    max-width: 500px;
+    padding: 40px 30px 40px;
+    border-radius: 5px;
+    top: 40px;
+}
+.model .close{
+    position: absolute;
+    right: 40px;
+    cursor: pointer;
+}
+
+.model .title{
+    color: hsl(278, 25%, 30%);
+    font-weight: 600;
+    font-size: 35px;
+}
+
+.model.content {
+    text-align: center;
+}
+
+.attributes {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+    text-align: center;
 }
