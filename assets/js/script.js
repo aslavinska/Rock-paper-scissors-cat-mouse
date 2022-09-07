@@ -11,8 +11,8 @@ function gameMain(){
         document.querySelectorAll('.user-choice .game-card').forEach(card => {
             card.addEventListener('click', (evt) => {
                 userChoice = getUserChoice(evt.target);
-                computerChoice = getComputerChoice();
                 console.log(getUserChoice());
+                computerChoice = getComputerChoice();
                 console.log(getComputerChoice());
                 startGame();
             })
@@ -62,3 +62,4 @@ function clearResult(){
     
 }
 }
+gameMain();
