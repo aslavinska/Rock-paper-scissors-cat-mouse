@@ -263,9 +263,11 @@ button {
     font-size: 16px;
 }
 
-.result-button:hover{
+.play-again-button:hover{
     background-position: left bottom;
     color: rgb(228, 214, 220);
+    transition: background-position .3s ease-out, color .3s ease-out;
+    text-transform: uppercase;
 }
 
 /*Model Section*/
