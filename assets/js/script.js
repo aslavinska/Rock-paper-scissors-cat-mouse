@@ -19,6 +19,7 @@ function startGame() {
     getWinner(userChoice, computerChoice);
     userChoiceElement.classList.add('hidden');
     pickedElement.classList.remove('hidden');
+    clearResultScore();
     buildChoice(true, userChoice);
     buildChoice(false, computerChoice);
 }
@@ -67,8 +68,9 @@ function playAgain() {
     pickedElement.classList.add('hidden');
 }
 
-function clearResult() {
-
+function clearResultScore() {
+    userPickElement.innerHTML = '';
+    computerPickElement.innerHTML = '';
 }
 
 function eventListeners() {
