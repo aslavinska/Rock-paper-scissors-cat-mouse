@@ -40,6 +40,7 @@
  ### Solved bugs
 
 1. During the development of the home page all elements were shift to the left of the page. Applying a main container to all elemnts and giving it item alligment to center resolved the issue. 
+2. 404 favicon error has been detected during the development, using favicon generator images and links were imported and the issue has been resolved. 
 
 
 ## Validator Testing 
