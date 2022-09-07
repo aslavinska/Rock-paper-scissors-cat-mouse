@@ -320,13 +320,17 @@ button {
     cursor: pointer;
 }
 
+.model .close #close {
+    max-width: 30px;
+}
+
 .model .title{
     color: hsl(278, 25%, 30%);
     font-weight: 600;
     font-size: 35px;
 }
 
-.model.content {
+.model .content {
     text-align: center;
 }
 

@@ -8,12 +8,17 @@ const userPickElement = document.querySelector('.user-pick');
 const computerPickElement = document.querySelector('.computer-pick');
 const resultElement = document.querySelector('.result');
 const resultTitleElement = resultElement.querySelector('.title');
+const scoreCountElement = document.querySelector('.score-count');
+const rulesButton = document.querySelector('.rules-button');
+const modelBackground = document.querySelector('.model-background');
+const model = document.querySelector('.model');
 const cards = ['rock', 'paper', 'scissors', 'cat', 'mouse'];
 const userWinResults = ['scissorspaper', 'paperrock', 'rockcat', 'catmouse', 'mousescissors',
     'rockscissors', 'scissorscat', 'catpaper', 'papermouse', 'mouserock'
 ];
 console.log("Game Start");
 pickedElement.classList.add('hidden');
+
 function startGame() {
     console.log("Game Start Inside function");
     getWinner(userChoice, computerChoice);
@@ -40,12 +45,17 @@ function getWinner(user, computer) {
     } else {
         resultTitleElement.innerText = 'You Lost';
         console.log('You Lost');
-        calculateScore(-1);
+        // calculateScore(-1);
     }
 }
 
 function calculateScore(result) {
     currentScore += result;
+    updateScoreBoard();
+}
+
+function updateScoreBoard() {
+    scoreCountElement.innerText = currentScore;
 }
 
 function getUserWinScore(result) {
@@ -81,12 +91,31 @@ function eventListeners() {
             computerChoice = getComputerChoice();
             console.log("computerChoice ", computerChoice);
             startGame();
-            
+
         })
         resultElement.querySelector('button').addEventListener('click', playAgain);
     })
-    
+
 }
+// Model 
+rulesButton.addEventListener('click', () => {
+    model.classList.add('active');
+    modelBackground.classList.add('active');
+});
+
+modelBackground.addEventListener('click', (event) => {
+    if (event.target === modelBackground) {
+        hideModel();
+    }
+});
+
+document.querySelector('.close').addEventListener('click', hideModel);
+
+function hideModel() {
+    model.classList.remove('active');
+    modelBackground.classList.remove('active');
+}
+
 
 function init() {
     eventListeners();
