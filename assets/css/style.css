@@ -3,10 +3,12 @@
 * {
     box-sizing: border-box;
 }
-html{
+
+html {
     height: 100%;
 }
-body{
+
+body {
     min-height: 100%;
     margin: 0;
     padding: 45px 5px 5px;
@@ -26,10 +28,10 @@ body{
 
 
 .attributes {
-    font-size: 11px; 
-    text-align: center; 
+    font-size: 11px;
+    text-align: center;
     color: hsl(328, 73%, 90%);
-    position:absolute;
+    position: absolute;
     left: 0;
     right: 0;
     bottom: 25px;
@@ -42,7 +44,8 @@ img {
 }
 
 
-button:focus, button:active {
+button:focus,
+button:active {
     outline: 0;
 }
 
@@ -61,12 +64,13 @@ button {
     flex-flow: column nowrap;
 }
 
-.hidden{
+.hidden {
     display: none;
 }
+
 /*Title block*/
 
- .title-block {
+.title-block {
     justify-content: space-between;
     width: 100%;
     max-width: 700px;
@@ -77,23 +81,24 @@ button {
 }
 
 .title-block ul {
-   list-style-type: none;
-   padding: 0;
-   font-size: 28px;
-   line-height: 0.8;
-   margin: 2px 0 0;
+    list-style-type: none;
+    padding: 0;
+    font-size: 28px;
+    line-height: 0.8;
+    margin: 2px 0 0;
 }
 
 .score {
-   background: #e9e7e7;
-   width: 150px;
-   border-radius: 10px;
-   align-items: center;
-   height: 115px;
-   padding: 14px 0 0;
+    background: #e9e7e7;
+    width: 150px;
+    border-radius: 10px;
+    align-items: center;
+    height: 115px;
+    padding: 14px 0 0;
 }
 
-.score-title, .comp-score-title{
+.score-title,
+.comp-score-title {
     color: hsl(268, 64%, 46%);
     font-size: 20px;
     font-weight: 700;
@@ -101,23 +106,26 @@ button {
     letter-spacing: 1px;
 }
 
-.score-count, .comp-score-count {
-   color: hsl(276, 25%, 31%);
-   font-size: 63px;
-   line-height: .9;
-   font-weight: 700;
-}
-/*Score block*/
-.score {
-   background: hsl(0, 0%, 100%);
-   width: 150px;
-   border-radius: 10px;
-   align-items: center;
-   height: 115px;
-   padding: 14px 0 0;
+.score-count,
+.comp-score-count {
+    color: hsl(276, 25%, 31%);
+    font-size: 63px;
+    line-height: .9;
+    font-weight: 700;
 }
 
-.score-title, .comp-score-title {
+/*Score block*/
+.score {
+    background: hsl(0, 0%, 100%);
+    width: 150px;
+    border-radius: 10px;
+    align-items: center;
+    height: 115px;
+    padding: 14px 0 0;
+}
+
+.score-title,
+.comp-score-title {
     color: hsl(288, 40%, 41%);
     font-size: 20px;
     font-weight: 700;
@@ -125,17 +133,18 @@ button {
     letter-spacing: 1px;
 }
 
-.score-count, .comp-score-count {
-   color: hsl(300, 44%, 37%);
-   font-size: 63px;
-   line-height: .9;
-   font-weight: 700;
+.score-count,
+.comp-score-count {
+    color: hsl(300, 44%, 37%);
+    font-size: 63px;
+    line-height: .9;
+    font-weight: 700;
 }
 
 
- /* User choice */
+/* User choice */
 
- .user-choice {
+.user-choice {
     background: center;
     background-size: 340px;
     width: 100%;
@@ -150,14 +159,14 @@ button {
     justify-content: center;
     width: 145px;
     height: 150px;
-    border-radius: 50%; 
+    border-radius: 50%;
     position: relative;
     cursor: pointer;
-    position: absolute;    
+    position: absolute;
 }
 
 .game-card img {
-    position: relative;  
+    position: relative;
     z-index: 2;
 }
 
@@ -173,33 +182,33 @@ button {
 }
 
 .game-card:hover:before {
-   background: rgba(73, 35, 65, 0);
-   box-shadow: none;
+    background: rgba(73, 35, 65, 0);
+    box-shadow: none;
 }
 
 .game-card.scissors {
-   top: 0;
-   left: 278px;
+    top: 0;
+    left: 278px;
 }
 
 .game-card.paper {
-   top: 130px;
-   right: 115px;
+    top: 130px;
+    right: 115px;
 }
 
 .game-card.rock {
-   bottom: 0;
-   right: 178px;
+    bottom: 0;
+    right: 178px;
 }
 
 .game-card.cat {
-   bottom: 0;
-   left: 180px;
+    bottom: 0;
+    left: 180px;
 }
 
 .game-card.mouse {
-   top: 130px;
-   left: 115px;
+    top: 130px;
+    left: 115px;
 }
 
 /* Picked section */
@@ -250,12 +259,13 @@ button {
     font-size: 58px;
     line-height: 1;
 }
-.result button{
+
+.result button {
     border: 1px solid hsl(315, 16%, 45%);
     padding: 14px 63px;
     border-radius: 10px;
     cursor: pointer;
-    background:linear-gradient( to right, #fff 50%, transparent 50%);
+    background: linear-gradient(to right, #fff 50%, transparent 50%);
     background-size: 250% 100%;
     background-position: right bottom;
     transition: background-position .3s ease-out, color 3s ease-out;
@@ -263,7 +273,7 @@ button {
     font-size: 16px;
 }
 
-.play-again-button:hover{
+.play-again-button:hover {
     background-position: left bottom;
     color: rgb(228, 214, 220);
     transition: background-position .3s ease-out, color .3s ease-out;
@@ -272,9 +282,11 @@ button {
 
 /*Model Section*/
 
-.model.active, .model-background.active{
-    display:block;
+.model.active,
+.model-background.active {
+    display: block;
 }
+
 .rules-button {
     border: 1px solid rgb(189, 148, 165);
     padding: 10px 35px;
@@ -283,17 +295,19 @@ button {
     right: 30px;
     bottom: 102px;
     cursor: pointer;
-    background: linear-gradient( to left, #fff 50%, transparent 50%);
+    background: linear-gradient(to left, #fff 50%, transparent 50%);
     background-size: 250% 100%;
     background-position: right bottom;
     transition: background-position .3s ease-out, color .3s ease-out;
     text-transform: uppercase;
 }
-.rules-button:hover{
+
+.rules-button:hover {
     background-position: left bottom;
     color: rgb(199, 190, 198);
 }
-.model-background{
+
+.model-background {
     display: none;
     position: absolute;
     top: 0;
@@ -303,7 +317,8 @@ button {
     z-index: 2;
     background: rgba(51, 51, 51, 0.2);
 }
-.model{
+
+.model {
     display: none;
     position: absolute;
     z-index: 3;
@@ -314,7 +329,8 @@ button {
     border-radius: 5px;
     top: 40px;
 }
-.model .close{
+
+.model .close {
     position: absolute;
     right: 40px;
     cursor: pointer;
@@ -324,7 +340,7 @@ button {
     max-width: 30px;
 }
 
-.model .title{
+.model .title {
     color: hsl(278, 25%, 30%);
     font-weight: 600;
     font-size: 35px;
@@ -343,7 +359,7 @@ button {
 }
 
 @media only screen and (max-width: 1366px) {
-    
+
     .picked .game-card {
         width: 145px;
         height: 150px;
@@ -352,7 +368,7 @@ button {
     .picked .game-card img {
         width: 55px;
     }
-    
+
     .picked .game-card:before {
         width: 115px;
         height: 115px;
@@ -375,7 +391,11 @@ button {
     .title-block {
         padding: 12px 12px 12px 24px;
         border-radius: 5px;
-        margin: 0 0 90px;
+        margin: 0 0 0px;
+    }
+
+    .section .title-block {
+        padding-bottom: 0;
     }
 
     .score {
@@ -385,11 +405,13 @@ button {
         padding: 10px 0 0;
     }
 
-    .score-title, .comp-score-title {
+    .score-title,
+    .comp-score-title {
         font-size: 11px;
     }
 
-    .score-count, .comp-score-count {
+    .score-count,
+    .comp-score-count {
         font-size: 39px;
     }
 
@@ -400,19 +422,22 @@ button {
     }
 
     .user-choice {
-        height: 308px;
+        height: 208px;
         background-size: 220px;
         max-width: 375px;
     }
 
     .user-choice .game-card {
-        width: 100px;
-        height: 100px;
+        width: 50px;
+        height: 50px;
+        background: rgb(156, 91, 165);
+        position: absolute;
+        z-index: 1;
     }
 
     .user-choice .game-card:before {
-        width: 75px;
-        height: 75px;
+        width: 50px;
+        height: 50px;
     }
 
     .user-choice .game-card img {
@@ -420,30 +445,30 @@ button {
     }
 
     .game-card.scissors {
-        top: 0;
-        left: 100px;
+        top: 20px;
+        left: 125px;
     }
-    
+
     .game-card.paper {
-        top: 80px;
-        right: 15px;
+        top: 60px;
+        right: 35px;
     }
 
     .game-card.rock {
-        bottom: 4px;
-        right: 52px;
+        bottom: 15px;
+        right: 70px;
     }
 
     .game-card.cat {
-        bottom: 0;
-        left: 55px;
+        bottom: 15px;
+        left: 70px;
     }
 
     .game-card.mouse {
-        top: 86px;
-        left: 20px;
+        top: 60px;
+        left: 35px;
     }
-    
+
     .picked .game-card {
         width: 145px;
         height: 150px;
@@ -452,15 +477,15 @@ button {
     .picked .game-card img {
         width: 55px;
     }
-    
+
     .picked .game-card:before {
-        width: 115px;
-        height: 115px;
+        width: 50px;
+        height: 50px;
     }
 
     .result {
         position: absolute;
-        top: 360px;
+        top: 260px;
         left: 0;
         right: 0;
     }
@@ -477,8 +502,11 @@ button {
     }
 
     .rules-button {
-        height: 40px;
+        height: 30px;
         right: inherit;
+        width: 70px;
+        border-radius: 5px;
+        padding: 0px;
     }
 
     .picked {
@@ -488,8 +516,13 @@ button {
     .picked p {
         font-size: 16px;
         line-height: 1;
-        margin: 0 0 10px;
+        margin: 0 0 5px;
         letter-spacing: 1.5px;
+    }
+    .picked .title{
+        padding: 0;
+        margin: 0;
+        text-size-adjust: 20%;
     }
 
     .model {
