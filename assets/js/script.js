@@ -1,6 +1,5 @@
 let userChoice = '';
 let computerChoice = '';
-let target = '';
 let currentScore = null;
 let currentCompScore = null;
 const userChoiceElement = document.querySelector('.user-choice');
@@ -55,6 +54,7 @@ function calculateScore(result) {
     currentScore += result;
     updateScoreBoard();
 }
+
 function calculateCompScore(result) {
     currentCompScore += result;
     updateCompScoreBoard();
@@ -63,21 +63,23 @@ function calculateCompScore(result) {
 function updateScoreBoard() {
     scoreCountElement.innerText = currentScore;
 }
+
 function updateCompScoreBoard() {
     scoreCompCountElement.innerText = currentCompScore;
 }
+
 function getUserWinScore(result) {
     return userWinResults.some(winStr => winStr === result);
 }
 
 function buildChoice(isItUserElement, className) {
-    const el = document.createElement('div');
-    el.classList = [`game-card ${className}`];
-    el.innerHTML = `<img src="/assets/images/${className}.png" alt="${className}">`;
+    const element = document.createElement('div');
+    element.classList = [`game-card ${className}`];
+    element.innerHTML = `<img src="/assets/images/${className}.png" alt="${className}">`;
     if (isItUserElement) {
-        userPickElement.append(el);
+        userPickElement.append(element);
     } else {
-        computerPickElement.append(el);
+        computerPickElement.append(element);
     }
 }
 
@@ -100,9 +102,9 @@ function eventListeners() {
             console.log("computerChoice ", computerChoice);
             startGame();
 
-        })
+        });
         resultElement.querySelector('button').addEventListener('click', playAgain);
-    })
+    });
 
 }
 // Model 

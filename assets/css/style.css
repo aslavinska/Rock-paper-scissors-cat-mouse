@@ -372,10 +372,11 @@ button {
     .user-choice .game-card {
         width: 100px;
         height: 100px;
-        background:none;
+        background: none;
         position: absolute;
         z-index: 1;
     }
+
     .game-card:before {
         background: none;
         position: absolute;
@@ -439,14 +440,15 @@ button {
         margin-top: 20px;
         padding: 14px 60px 13px;
     }
-   .rules-button {
-     bottom: 50px;
-     right: inherit;
+
+    .rules-button {
+        bottom: 50px;
+        right: inherit;
     }
 
     .picked {
-       padding-top: 10px;
-       padding-bottom: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
 
     .picked p {
@@ -455,7 +457,8 @@ button {
         margin: 0 0 5px;
         letter-spacing: 1.5px;
     }
-    .picked .title{
+
+    .picked .title {
         padding: 0;
         margin: 0;
         text-size-adjust: 20%;
@@ -604,20 +607,22 @@ button {
         margin-top: 20px;
         padding: 14px 60px 13px;
     }
+
     .picked .game-card {
-      
+
         height: 80px;
         width: 150px;
         padding-bottom: 0;
     }
-   .rules-button {
-     bottom: 50px;
-     right: inherit;
+
+    .rules-button {
+        bottom: 50px;
+        right: inherit;
     }
 
     .picked {
-       padding-top: 10px;
-       padding-bottom: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
 
     .picked p {
@@ -626,7 +631,8 @@ button {
         margin: 0 0 5px;
         letter-spacing: 1.5px;
     }
-    .picked .title{
+
+    .picked .title {
         padding: 0;
         margin: 0;
         text-size-adjust: 20%;
