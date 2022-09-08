@@ -485,14 +485,15 @@ button {
 
     .result {
         position: absolute;
-        top: 260px;
+        top: 240px;
+        bottom: 10px;
         left: 0;
         right: 0;
     }
 
     .result .title {
-        font-size: 57px;
-        margin: 53px 0 19px;
+        font-size: 35px;
+        margin: 0;
     }
 
     .result button {
@@ -500,7 +501,12 @@ button {
         font-size: 17px;
         letter-spacing: 2px;
     }
-
+    .picked .game-card {
+      
+        height: 80px;
+        width: 150px;
+        padding-bottom: 0;
+    }
     .rules-button {
         height: 30px;
         right: inherit;
