@@ -52,7 +52,8 @@ The lie link can be found here - [Rock, Paper, Scissors, Cat and Mouse Game](htt
 ## Content
 - The idea for the project has been provided by the Code Institute.  
 - The template for the Read.me file has been taked from Code Institute. 
-- Online tutorials were also used as a reference point and can be found at https://github.com/CompetentProgramming/rock-paper-scissors-lizard-spock
+- Online tutorials were also used as a reference point and can be found at [Youtube Free tutorial](https://www.youtube.com/watch?v=RwFeg0cEZvQ )
+ and [Github Free Example](https://github.com/CompetentProgramming/rock-paper-scissors-lizard-spock)
 
 ## Media
 All images were created by Anastasija Slavinska. All rights reserved.
