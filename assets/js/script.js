@@ -75,7 +75,7 @@ function getUserWinScore(result) {
 function buildChoice(isItUserElement, className) {
     const element = document.createElement('div');
     element.classList = [`game-card ${className}`];
-    element.innerHTML = `<img src="/assets/images/${className}.png" alt="${className}">`;
+    element.innerHTML = `<img src="./assets/images/${className}.png" alt="${className}">`;
     if (isItUserElement) {
         userPickElement.append(element);
     } else {
