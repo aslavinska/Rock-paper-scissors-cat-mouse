@@ -502,7 +502,7 @@ button {
 }
 
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 320px) {
 
     .section .title-block {
         padding-bottom: 0;
