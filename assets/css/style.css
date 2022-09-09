@@ -500,26 +500,26 @@ button {
     }
 
     .user-choice {
-        height: 208px;
+        height: 180px;
         background-size: 220px;
         max-width: 375px;
     }
 
     .user-choice .game-card {
-        width: 90px;
-        height: 90px;
+        width: 70px;
+        height: 70px;
         background: none;
         position: absolute;
         z-index: 1;
     }
 
     .user-choice .game-card img {
-        width: 90px;
+        width: 70px;
     }
 
     .game-card.scissors {
-        top: 10%;
-        left: 35%;
+        top: 5%;
+        left: 40%;
     }
 
     .game-card.paper {
