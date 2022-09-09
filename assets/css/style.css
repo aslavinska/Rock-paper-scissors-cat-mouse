@@ -488,35 +488,9 @@ button {
 
 
 @media screen and (max-width: 300px) {
-    body {
-        padding: 30px 10px 5px;
-    }
-
-    .title-block {
-        padding: 12px 12px 12px 24px;
-        border-radius: 5px;
-        margin: 0 0 0px;
-    }
 
     .section .title-block {
         padding-bottom: 0;
-    }
-
-    .score {
-        width: 80px;
-        border-radius: 5px;
-        height: 72px;
-        padding: 10px 0 0;
-    }
-
-    .score-title,
-    .comp-score-title {
-        font-size: 11px;
-    }
-
-    .score-count,
-    .comp-score-count {
-        font-size: 39px;
     }
 
     .title-block ul {
@@ -532,79 +506,40 @@ button {
     }
 
     .user-choice .game-card {
-        width: 50px;
-        height: 50px;
-        background: rgb(156, 91, 165);
+        width: 100px;
+        height: 100px;
+        background: none;
         position: absolute;
         z-index: 1;
     }
 
-    .user-choice .game-card:before {
-        width: 50px;
-        height: 50px;
-    }
-
     .user-choice .game-card img {
-        width: 35px;
+        width: 100px;
     }
 
     .game-card.scissors {
         top: 20px;
-        left: 125px;
+        left: 100px;
     }
 
     .game-card.paper {
-        top: 60px;
-        right: 35px;
-    }
-
-    .game-card.rock {
-        bottom: 15px;
-        right: 70px;
-    }
-
-    .game-card.cat {
-        bottom: 15px;
-        left: 70px;
+        top: 120px;
+        right: 15px;
     }
 
     .game-card.mouse {
-        top: 60px;
-        left: 35px;
+        top: 120px;
+        left: 15px;
     }
 
-    .picked .game-card {
-        width: 80px;
-        height: 80px;
-    }
-
-    .picked .game-card img {
-        width: 80px;
-        height: 80px;
-    }
-
-    .picked .game-card:before {
-        width: 80px;
-        height: 80px;
-    }
-
-    .result {
-        position: absolute;
+    .game-card.rock {
         top: 240px;
-        bottom: 10px;
-        left: 0;
-        right: 0;
-        padding-top: 30px;
+        right: 30px;
     }
 
-    .choice {
-        font-size: 35px;
-        padding-top: 20px;
-    }
-
-    .play-button {
-        margin-top: 20px;
-        padding: 14px 60px 13px;
+    .game-card.cat {
+        top: 240px;
+        left: 30px;
     }
 
     .picked .game-card {
@@ -614,47 +549,4 @@ button {
         padding-bottom: 0;
     }
 
-    .rules-button {
-        bottom: 50px;
-        right: inherit;
-    }
-
-    .picked {
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
-
-    .picked p {
-        font-size: 16px;
-        line-height: 1;
-        margin: 0 0 5px;
-        letter-spacing: 1.5px;
-    }
-
-    .picked .title {
-        padding: 0;
-        margin: 0;
-    }
-
-    .model {
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        flex-flow: column;
-        align-items: center;
-        max-width: inherit;
-    }
-
-    .model.active {
-        display: flex;
-    }
-
-    .close {
-        top: 20px;
-    }
-
-    .model .title {
-        margin: 30px 0 60px;
-    }
 }
