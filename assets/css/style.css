@@ -541,12 +541,22 @@ button {
         top: 80%;
         left: 15%;
     }
-
+    .choice{
+        height: 0px;
+        padding: 0;
+    }
+    .result{
+        font-size:0;
+    }
+    .result .title{
+        font-size: 0;
+    }
     .picked .game-card {
 
         height: 80px;
         width: 150px;
         padding-bottom: 0;
     }
+
 
 }
